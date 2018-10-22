@@ -69,7 +69,7 @@
         var  _t = this;
         this.$refs[formName].validate((valid) => {
           if (valid) {
-            // _t.$router.push({name:'Info'});
+            _t.$router.push({name:'Info'});
           }
         });
       },
