@@ -32,6 +32,7 @@ const ForgetPassword = () => import('@/page/pages/ForgetPassword');
 const Info = () => import('@/page/pages/Info');
 const changeMobile = () => import('@/page/pages/changeMobile');
 const changeMobileNew = () => import('@/page/pages/changeMobileNew');
+const updatePassword = () => import('@/page/pages/updatePassword');
 const Account = () => import('@/page/pages/Account');
 
 Vue.use(Router);
@@ -57,7 +58,7 @@ export default new Router({
         {path: '/index/info',name:'Info',component:Info},
         {path: '/index/info/changeMobile',name:'changeMobile',component:changeMobile},
         {path: '/index/info/changeMobileNew',name:'changeMobileNew',component:changeMobileNew},
-
+        {path: '/index/info/updatePassword',name:'updatePassword',component:updatePassword},
         {path: '/index/account',name:'Account',component:Account},
       ]
     },

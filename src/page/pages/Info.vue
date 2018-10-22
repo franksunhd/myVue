@@ -16,8 +16,8 @@
         </p>
         <p class="info">
           <span>登录密码:</span>
-          <span>{{!Info.info?'已设置':'未设置'}}</span>
-          <a href="javascript:;">修改</a>
+          <span>{{Info.info?'已设置':'未设置'}}</span>
+          <a href="javascript:;" @click="upDatePassword">修改</a>
         </p>
       </div>
     </div>
@@ -34,13 +34,16 @@
         Info:{
           userName: localStorage.getItem('userName') || '',
           mobile: localStorage.getItem('mobile') || '',
-          info:true
+          info:localStorage.getItem('info') || false,
         }
       }
     },
     methods:{
       upDateMobile(){
         this.$router.push({name:'changeMobile'});
+      },
+      upDatePassword(){
+        this.$router.push({name:'updatePassword'});
       }
     },
     filters:{

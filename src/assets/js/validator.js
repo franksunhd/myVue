@@ -58,7 +58,7 @@ export function checkCode(rule,value,callback) {
 
 export function checkPhoneNumber(rule,value,callback) {
   if (!value) {
-    return callback(new Error('手机号不能为空'))
+    return callback(new Error('手机号不能为空'));
   }
   setTimeout(function () {
     if(value){
@@ -71,5 +71,23 @@ export function checkPhoneNumber(rule,value,callback) {
       return callback()
     }
   },0);
+}
 
+// 校验密码
+export function checkPass(rule,value,callback) {
+  if (!value) {
+    return callback(new Error('密码不能为空'))
+  }
+
+  setTimeout(function () {
+    if(value){
+      if(!value.toString().match(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/)){
+        return callback(new Error('密码需为6-20位字母、数字组合'))
+      }else{
+        return callback()
+      }
+    }else{
+      return callback()
+    }
+  },0);
 }
