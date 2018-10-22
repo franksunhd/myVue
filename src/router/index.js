@@ -30,6 +30,8 @@ const Registered = () => import('@/page/pages/Registered');
 const ForgetPassword = () => import('@/page/pages/ForgetPassword');
 // 设置管理
 const Info = () => import('@/page/pages/Info');
+const changeMobile = () => import('@/page/pages/changeMobile');
+const changeMobileNew = () => import('@/page/pages/changeMobileNew');
 const Account = () => import('@/page/pages/Account');
 
 Vue.use(Router);
@@ -53,6 +55,9 @@ export default new Router({
         {path: '/index/aboutBlog',name:'aboutBlog',component:aboutBlog},
         {path: '/index/aboutBlogger',name:'aboutBlogger',component:aboutBlogger},
         {path: '/index/info',name:'Info',component:Info},
+        {path: '/index/info/changeMobile',name:'changeMobile',component:changeMobile},
+        {path: '/index/info/changeMobileNew',name:'changeMobileNew',component:changeMobileNew},
+
         {path: '/index/account',name:'Account',component:Account},
       ]
     },

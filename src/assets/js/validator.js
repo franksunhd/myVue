@@ -39,12 +39,10 @@ export function isNetWork(rule, value, callback) {
   },0);
 }
 
-//
-export function checkidentifyCode(rule,value,callback) {
+export function checkCode(rule,value,callback) {
   if (!value) {
     return callback(new Error('请输入验证码'))
   }
-
   setTimeout(function () {
     if(value){
       if(!Number(value)){
@@ -59,13 +57,19 @@ export function checkidentifyCode(rule,value,callback) {
 }
 
 export function checkPhoneNumber(rule,value,callback) {
-  if(value){
-    if(!value.toString().match(/^(0|86|17951)?(1[3-9][0-9])[0-9]{8}$/)){
-      return callback(new Error('手机号不正确'))
+  if (!value) {
+    return callback(new Error('手机号不能为空'))
+  }
+  setTimeout(function () {
+    if(value){
+      if(!value.toString().match(/^(0|86|17951)?(1[3-9][0-9])[0-9]{8}$/)){
+        return callback(new Error('手机号不正确'))
+      }else{
+        return callback()
+      }
     }else{
       return callback()
     }
-  }else{
-    return callback()
-  }
+  },0);
+
 }
