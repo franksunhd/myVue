@@ -1,0 +1,365 @@
+html,
+body {height: 100%;}
+/*输入框的边框颜色*/
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus,.el-textarea__inner:focus {border-color: #fc9b0e;}
+/*拼命加载*/
+.el-loading-spinner .el-loading-text {color: #fc9b0e;}
+.el-loading-spinner .path {stroke: #fc9b0e;}
+.oriBtn {color: #fc9b0e;}
+
+/*message*/
+.el-message{height:40px;background:#66666c;border-radius: 10px;top:43%;left:53%;padding:10px;min-width:auto;text-align: center;}
+.el-message i.el-message__icon {width:0;height:0;display:none;}
+.el-message p.el-message__content{color:#fff;font-size:14px;font-family: 'Microsoft YaHei';text-align: center;margin:0 auto;}
+
+/*alert*/
+.el-message-box {
+  border-radius: 15px;
+  width:430px;
+  border: none;
+}
+.el-message-box .el-message-box__content {
+  padding:30px 32px;
+}
+.el-message-box__header {
+  background-color: #ff9000;
+  font-size:16px;
+  padding: 11px 32px;
+  border-top-right-radius:15px;
+  border-top-left-radius:15px;
+  text-align: left;
+}
+.el-message-box__title {
+  color: #fff;
+}
+.el-message-box__headerbtn{
+  position: absolute;
+  top: 8px;
+  right: 25px;
+}
+.el-message-box__headerbtn .el-message-box__close {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 25px;
+}
+.el-message-box__headerbtn:focus .el-message-box__close,
+.el-message-box__headerbtn:hover .el-message-box__close {
+  color: #fff;
+  font-size: 25px;
+}
+
+
+/*button*/
+.el-button--default:hover {
+  color: #fff;
+  border-color: #4f5659;
+  background-color: #4f5659;
+}
+
+.el-button--default:focus {
+  color: #fff;
+  border-color: #4f5659;
+  background-color: #4f5659;
+}
+
+.el-button--default:active {
+  color: #fff;
+  border-color: #0a1215;
+  background-color: #0a1215;
+}
+
+.el-button--primary:focus,
+.el-button--primary {
+  border-color: #ff9000;
+  background-color: #ff9000;
+  color: #fff;
+  border-radius: 5px;
+}
+.el-button--primary:hover {
+  background-color: #feb454;
+  border-color: #feb454;
+}
+.el-button--primary.is-active,
+.el-button--primary:active {
+  border-color: #f67a00;
+  background-color: #f67a00;
+  color: #fff;
+}
+.el-button--primary:active {
+  outline: none;
+}
+
+.el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: #f67a00;
+  color: #fff;
+}
+
+.star label.el-form-item__label::after {
+  content: " * ";
+  font-size: 16px;
+  color: #ff4b33;
+  font-weight: bolder;
+}
+
+.el-button--text {
+  color: #f67a00;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.el-button--text:focus,
+.el-button--text:hover {
+  color: #f67a00;
+}
+
+/*table*/
+.el-table {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #1f2d3d;
+}
+
+.el-table--fit {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.el-table th {
+  background-color: #f6f6f6;
+}
+
+.el-table th,
+.el-table td {
+  border-right: 1px solid #ddd;
+}
+
+.paging {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.el-select-dropdown__item.selected {
+  color: #f67a00;
+}
+
+.el-pagination__sizes .el-input .el-input__inner:hover,
+.el-select .el-input.is-focus .el-input__inner{
+  border: 1px solid #f67a00;
+}
+
+.el-select .el-input__inner:focus {
+  border: 1px solid #dcdfe6;
+}
+
+.el-pager li {
+  padding: 0 4px;
+  background: #fff;
+  font-size: 13px;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+}
+
+.el-pager li.active {
+  border: 1px solid #ddd;
+  background-color: transparent;
+  color: #fd8125;
+}
+
+.el-pager li:hover,
+.el-pagination button:hover{
+  color: #fd8125;
+}
+
+.el-pagination .btn-next, .el-pagination .btn-prev {
+  background: center center no-repeat #fff;
+  background-size: 16px;
+  border: 1px solid #d1dbe5;
+  cursor: pointer;
+  color: #97a8be;
+  padding: 0 4px;
+  font-size: 13px;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.el-pager li.active + li {
+  border: 1px solid #ddd;
+}
+
+
+/*日期*/
+.el-date-table td.current:not(.disabled) span {
+  background-color: #f67a00;
+}
+
+.el-date-table td.available:hover{
+  color: #f67a00;
+}
+
+.el-picker-panel__footer .el-picker-panel__link-btn:nth-child(2) {
+  border: 1px solid #dcdcdc;
+  color: #333;
+  line-height: 24px;
+  border-radius: 2px;
+  padding: 0 20px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: 0;
+  font-size: 12px;
+}
+
+.el-date-table td {
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.el-date-table td.today {
+  background-color: #f67a00;
+  color: #fff;
+}
+
+.el-date-table td.today span {
+  color: #fff;
+}
+
+
+/*side*/
+.el-submenu .el-menu-item{
+  height:35px !important;
+  line-height:35px !important;
+}
+.el-submenu__title{
+  height:50px !important;
+  line-height:50px !important;
+}
+.el-submenu__icon-arrow{
+  display:none;
+}
+.el-icon-arrow-down{
+  display:none;
+}
+.el-submenu__icon-arrow{
+  width:100%;
+  height:100%;
+}
+.activeOpen{
+  display: block;
+  z-index:9999999;
+}
+
+.el-submenu__title {
+  font-size: 16px;
+  color: #fff;
+  background: none !important;
+}
+
+.el-menu .el-menu-item {
+  color:#fff;
+  font-size:14px;
+}
+
+.el-menu,
+.el-submenu .el-menu{
+  background: #363F47 !important;
+}
+
+.el-submenu__title:hover {
+  background: none !important;
+}
+
+
+/*步骤条*/
+.el-step__title.is-finish,
+.el-step__description.is-finish {
+  color: #3b4;
+  font-size: 12px;
+}
+
+.el-step__title.is-process,
+.el-step__description.is-process,
+.el-step__title.is-wait,
+.el-step__description.is-wait {
+  color: #999;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.el-step__head.is-finish {
+  color: #3b4;
+  border-color: #3b4;
+}
+
+.el-step__head.is-process,
+.el-step__head.is-wait {
+  color: #999;
+  border-color: #999;
+}
+
+.el-step.is-horizontal .el-step__line {
+  width: 60%;
+  background-color: #bbb;
+}
+
+.el-step.is-finish .el-step__line {
+  border-bottom: 4px dotted #3b4;
+}
+
+.el-step.is-center .el-step__line {
+  left: 70%;
+}
+
+.el-step__line-inner {
+  border: none;
+}
+
+.el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error .el-textarea__inner:focus,
+.el-message-box__input input.invalid,
+.el-message-box__input input.invalid:focus {
+  border-color: #f67a00;
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #dcdfe6;
+}
+
+.el-form-item__error {
+  color: #f67a00;
+}
+
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover {
+  color: #333;
+  background: #eee;
+  border-color: #eee;
+}
+
+.el-input__suffix {
+  display: none;
+}
