@@ -360,6 +360,48 @@ body {height: 100%;}
   border-color: #eee;
 }
 
-.el-input__suffix {
+.el-form-item.is-error .el-input__validateIcon {
   display: none;
 }
+
+.el-table thead {
+  color: #1f2d3d;
+}
+
+/*暂无数据*/
+div.el-table__empty-block{
+  background: url('../../assets/img/Nodate.png') no-repeat center;
+}
+
+.el-table__empty-block{
+  min-height:300px;
+}
+
+.el-table__empty-text{
+  top:80%;
+}
+
+
+/*paging 分页*/
+.paging {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.reset,
+.reset:active {
+  background-color: #0b95de;
+  color:#fff;
+  border: 1px solid #0b95de;
+}
+
+.reset:hover,
+.reset:focus {
+  background-color: #4ebcf2;
+  border: 1px solid #4ebcf2;
+}
+
+
+.blueBtn {color: #00baff;}
+.blueBtn:hover {color: #34c5fb;}
+.blueBtn:active {color: #28b2f3;}
