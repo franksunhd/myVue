@@ -363,20 +363,20 @@
     z-index: 10;
   }
 
-  .phoneBox-left {
-    display: flex;
+  .phoneBox .phoneBox-left {
+    display: flex !important;
     flex: 1;
     border: 1px solid #ddd;
     position: relative;
     z-index: 1;
   }
 
-  .phoneBox-left:hover {
+  .phoneBox .phoneBox-left:hover {
     border: 1px solid rgb(102, 102, 102);
     z-index: 10;
   }
 
-  .phoneBox-left label {
+  .phoneBox .phoneBox-left label {
     width: 107px;
     height: 50px;
     line-height: 50px;
@@ -384,18 +384,18 @@
     padding: 0 0 0 15px;
   }
 
-  .phoneBox-left .el-input {
+  .phoneBox .phoneBox-left .el-input {
     flex: 1;
     height: 50px;
     line-height: 50px;
   }
 
-  .phoneBox-left .el-input .el-input__inner {
+  .phoneBox .phoneBox-left .el-input .el-input__inner {
     border: none;
     border-radius: 0;
   }
 
-  .phoneBox-right {
+  .phoneBox .phoneBox-right {
     height: 52px;
     line-height: 52px;
     padding: 0 15px;
@@ -408,7 +408,7 @@
     z-index: 1;
   }
 
-  .phoneBox-right:hover {
+  .phoneBox .phoneBox-right:hover {
     border-radius: 0;
     background-color: #fff;
     border: 1px solid rgb(102, 102, 102);
