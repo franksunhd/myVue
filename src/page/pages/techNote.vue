@@ -64,12 +64,12 @@
 
         },
         tableData:[
-          {id:1001,name:'container布局容器',type:'基础组件',date:'2018-10-10 10:10:10'},
-          {id:1002,name:'Radio单选框',type:'形式',date:'2018-10-10 10:10:10'},
-          {id:1003,name:'Table表格',type:'数据',date:'2018-10-10 10:10:10'},
-          {id:1004,name:'Alert警告',type:'通知',date:'2018-10-10 10:10:10'},
-          {id:1005,name:'Breadcrumb面包屑',type:'导航',date:'2018-10-10 10:10:10'},
-          {id:1006,name:'Collapse折叠面板',type:'其它',date:'2018-10-10 10:10:10'},
+          {id:2001,name:'container布局容器',type:'基础组件',date:'2018-10-10 10:10:10'},
+          {id:2002,name:'Radio单选框',type:'形式',date:'2018-10-10 10:10:10'},
+          {id:2003,name:'Table表格',type:'数据',date:'2018-10-10 10:10:10'},
+          {id:2004,name:'Alert警告',type:'通知',date:'2018-10-10 10:10:10'},
+          {id:2005,name:'Breadcrumb面包屑',type:'导航',date:'2018-10-10 10:10:10'},
+          {id:2006,name:'Collapse折叠面板',type:'其它',date:'2018-10-10 10:10:10'},
         ],
         types:[
           {id:1,dife:'基础组件'},
