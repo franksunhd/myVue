@@ -9,6 +9,7 @@ const Home = () => import('@/page/pages/Home');
 // 随笔
 const LifeNote = () => import('@/page/pages/LifeNote');
 const techNote = () => import('@/page/pages/techNote');
+const techNoteDetail = () => import('@/page/pages/techNoteDetail');
 // 技术分享
 const UiShare = () => import('@/page/pages/UiShare');
 const webShare = () => import('@/page/pages/webShare');
@@ -45,6 +46,7 @@ export default new Router({
         {path: '/index/home',name:'home',component:Home},
         {path: '/index/LifeNote',name:'LifeNote',component:LifeNote},
         {path: '/index/techNote',name:'techNote',component:techNote},
+        {path: '/index/techNote/techNoteDetail',name:'techNoteDetail',component:techNoteDetail},
         {path: '/index/UiShare',name:'UiShare',component:UiShare},
         {path: '/index/UiShare/toolSoftwareDetail',name:'toolSoftwareDetail',component:toolSoftwareDetail},
         {path: '/index/webShare',name:'webShare',component:webShare},

@@ -18,8 +18,7 @@
     </el-form>
     <el-table :data="tableData">
       <el-table-column label="序号" type="index" width="50" />
-      <el-table-column label="名称" prop="name" width="200" />
-      <el-table-column label="类别" prop="type" />
+      <el-table-column label="名称" prop="name" />
       <el-table-column label="类别" prop="type" />
       <el-table-column label="上传时间" prop="date" />
       <el-table-column label="操作">
