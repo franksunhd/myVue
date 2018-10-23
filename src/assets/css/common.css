@@ -95,8 +95,8 @@ body {height: 100%;}
   color: #fff;
 }
 
-.star label.el-form-item__label::after {
-  content: " * ";
+.star label.el-form-item__label::before {
+  content: "* ";
   font-size: 16px;
   color: #ff4b33;
   font-weight: bolder;
@@ -397,4 +397,9 @@ div.el-table__empty-block{
   visibility: hidden;
   vertical-align:middle;
   width: 0px;
+}
+
+.el-input__inner {
+  height: 35px;
+  line-height: 35px;
 }

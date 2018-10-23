@@ -3,6 +3,7 @@ import App from './App';
 import router from './router';
 import Vuex from 'vuex';
 import api from './config/api.js';
+import config from './config/config.js'
 import canvas from './config/canvas.js';
 import ElementUI from 'element-ui';
 import {
@@ -21,6 +22,7 @@ Vue.prototype.getCookie = getCookie;
 Vue.prototype.setCookie = setCookie;
 Vue.prototype.delCookie = delCookie;
 Vue.prototype.$api = api;
+Vue.prototype.$config = config;
 Vue.prototype.$message = Message;
 Vue.prototype.$alert = MessageBox.alert;
 Vue.prototype.$confirm = MessageBox.confirm;

@@ -39,6 +39,7 @@ export function isNetWork(rule, value, callback) {
   },0);
 }
 
+// 校验短信验证码
 export function checkCode(rule,value,callback) {
   if (!value) {
     return callback(new Error('请输入验证码'))
@@ -56,6 +57,7 @@ export function checkCode(rule,value,callback) {
   },0);
 }
 
+// 校验手机号
 export function checkPhoneNumber(rule,value,callback) {
   if (!value) {
     return callback(new Error('手机号不能为空'));
@@ -67,7 +69,7 @@ export function checkPhoneNumber(rule,value,callback) {
       }else{
         return callback()
       }
-    }else{
+    } else {
       return callback()
     }
   },0);
@@ -76,9 +78,8 @@ export function checkPhoneNumber(rule,value,callback) {
 // 校验密码
 export function checkPass(rule,value,callback) {
   if (!value) {
-    return callback(new Error('密码不能为空'))
+    return callback(new Error('密码不能为空'));
   }
-
   setTimeout(function () {
     if(value){
       if(!value.toString().match(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/)){
@@ -90,4 +91,13 @@ export function checkPass(rule,value,callback) {
       return callback()
     }
   },0);
+}
+
+// 校验图形验证码
+export function checkCodeMessage(rule,value,callback) {
+  if (!value) {
+    return callback(new Error('验证码不能为空'))
+  } else {
+    return callback();
+  }
 }
